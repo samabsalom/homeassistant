@@ -4,7 +4,7 @@
 #
 ############################################################
 
- default_view:
+default_view:
   name: DEFAULT
   view: yes
   icon: mdi:home
@@ -15,56 +15,56 @@
     - group.climate_control
     - group.weather
 
- climate_control:
+climate_control:
   name: Climate Control
   entities:
     - climate.downstairs
     - climate.upstairs
 
- living_room:
+living_room:
   view: yes
   name: Living Room
   icon: mdi:sofa
-  entities: 
-   - light.lamp
-   - light.big_lamp
+  entities:
+    - light.lamp
+    - light.big_lamp
 
- bedrooms:
+bedrooms:
   view: yes
   name: Bedrooms
   icon: mdi:hotel
-  entities: 
-   - group.master_bedroom
-   - group.chloes_bedroom
-   
- automation:
+  entities:
+    - group.master_bedroom
+    - group.chloes_bedroom
+
+automation:
   view: yes
   icon: mdi:robot
   entities:
-   - automation.weekday_sunrise_hall__living_room
-   - automation.weekday_sunrise_master_bedroom
-   - group.all_lights
-   - group.all_switches
-   - automation.turn_on_hall_light_when_arriving_home
-   - script.fireplace
+    - automation.weekday_sunrise_hall__living_room
+    - automation.weekday_sunrise_master_bedroom
+    - group.all_lights
+    - group.all_switches
+    - automation.turn_on_hall_light_when_arriving_home
+    - script.fireplace
 
- chloes_bedroom:
+chloes_bedroom:
   name: Chloe's Bedroom
-  entities: 
-   - light.chloes_room
-   
- master_bedroom:
-  name: Master Bedroom
-  entities: 
-   - light.master_bedroom
+  entities:
+    - light.chloes_room
 
- presence:
+master_bedroom:
+  name: Master Bedroom
+  entities:
+    - light.master_bedroom
+
+presence:
   name: Presence
   entities:
     - device_tracker.chloesiphone
     - pi_dmcc_iphone
 
- sensor_pi:
+sensor_pi:
   name: Raspberry Pi
   entities:
     - sensor.cpu_use
@@ -79,7 +79,8 @@
     - sensor.received_eth1
     - sensor.sent_eth1
 
- security:
-  - light.downstairs_hallway
-  - light.hallways
-  - switch.lamp
+security:
+  entities:
+    - light.downstairs_hallway
+    - light.hallways
+    - switch.lamp
